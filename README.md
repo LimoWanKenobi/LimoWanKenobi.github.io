@@ -1,4 +1,6 @@
 limowankenobi.github.io
 =======================
 
-Limos io
+Limos io site-blog
+
+using the [SO Simple theme](http://mmistakes.github.io/so-simple-theme/theme-setup/) for Jeckill
