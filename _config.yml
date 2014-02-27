@@ -1,7 +1,7 @@
 title:            Limo Wan Kenobi
 description:      Limo´s blog.
 logo:             site-logo.png
-disqus_shortname: 
+disqus_shortname: limos-io
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
 url:              http://limowankenobi.github.io
