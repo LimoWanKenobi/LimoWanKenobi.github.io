@@ -1,0 +1,16 @@
+
+# Jeckyll configurations
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+
+timezone:    Europe/Vienna
+permalink:   pretty
+
+# defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "default"
+      author: "Edgar Hernandez"
