@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Hello Github.io"
 modified: 2014-02-23 19:04:08 +0100
 tags: [Limo, Github, Blogging]

@@ -1,7 +1,7 @@
+# Site wide configuration
+title: Limo´s thinking
 
-# Jeckyll configurations
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-
+# Jekyll configuration
 timezone:    Europe/Vienna
 permalink:   pretty
 
@@ -14,3 +14,5 @@ defaults:
     values:
       layout: "default"
       author: "Edgar Hernandez"
+
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

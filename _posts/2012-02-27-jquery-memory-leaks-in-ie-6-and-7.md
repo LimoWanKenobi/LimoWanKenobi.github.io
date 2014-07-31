@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "jQuery memory leaks in IE 6 and 7"
 modified: 2012-02-27 13:49:33 +0100
 tags: [jQuery, Debugging, Code]
