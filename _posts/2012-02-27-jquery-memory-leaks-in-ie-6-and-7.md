@@ -9,6 +9,7 @@ image:
   creditlink: 
 comments: true
 share: 
+categories: blog
 ---
 
 Some years ago, while I was working for Digipro, I was assigned to the development of a control used to display digitalized images using only HTML and javascript. The previous control was developed using ActiveX controls and was having serious difficulties with the increse of security of IE.

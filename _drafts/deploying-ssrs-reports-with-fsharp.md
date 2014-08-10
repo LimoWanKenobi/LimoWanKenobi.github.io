@@ -9,4 +9,5 @@ image:
   creditlink: 
 comments: 
 share: 
+categories: blog
 ---

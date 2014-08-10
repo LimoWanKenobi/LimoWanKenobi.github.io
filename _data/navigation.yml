@@ -1,11 +1,11 @@
 # Site navigation links
 
 - title: Blog
-  url: /blog.html
+  url: /blog/
   excerpt:
   image:
 
 - title: About
-  url: /about.html
+  url: /about/
   excerpt:
   image:

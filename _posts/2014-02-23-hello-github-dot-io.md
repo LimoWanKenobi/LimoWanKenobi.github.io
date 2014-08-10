@@ -9,6 +9,7 @@ image:
   creditlink: 
 comments: true
 share: 
+categories: blog
 ---
 
 Hello World! from Github.io.
