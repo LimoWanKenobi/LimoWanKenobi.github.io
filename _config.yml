@@ -29,16 +29,6 @@ owner:
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/+EdgarSaidHernándezSánchez?rel=author 
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-  - title: Articles
-    url: /articles/
-  - title: About
-    url: /about/
-
 # Analytics and webmaster tools stuff goes here
 google_analytics_tracking_id:   UA-48372898-1
 google_analytics_default_url:  limowankenobi.github.io 

@@ -39,7 +39,17 @@
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
 
   </head>
-<body>
-	{{ content }}
-</body>
+  <body>
+  	{% include header.html %}
+
+  	<div id="page-wrapper">
+      {% include browser-upgrade.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+
+    {% if page.image.feature %}{% include scroll-cue.html %}{% endif %}
+  </body>
 </html>
