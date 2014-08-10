@@ -1,0 +1,13 @@
+{
+  "name": "limowankenobi_io",
+  "version": "0.0.1",
+  "description": "The Jekyll blog of LimoWanKenobi",
+  "author": "Limo Wan Kenobi <limowankenobi@gmail.com>",
+  "homepage": "http://limowankenobi.gihub.io/",
+  "license": "The MIT License (MIT)",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jekyll": "^0.4.2"
+  }
+}
