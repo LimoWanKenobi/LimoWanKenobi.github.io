@@ -1,22 +1,22 @@
 # Site wide configuration
-title: Limo.think
-description:
-logo: # 120x120 px default image used for Twitter summary card
-teaser: 400x250.gif # 400x250 px default teaser image used in image archive grid
+title:            Limo.think
+description:      Limos pages
+logo:             # 120x120 px default image used for Twitter summary card
+teaser:           400x250.gif # 400x250 px default teaser image used in image archive grid
 locale:
-url:  http://limowankenobi.github.io #http://localhost:4000 #http://limowankenobi.github.io
-disqus-shortname:
+url:              http://localhost:4000 #http://localhost:4000 #http://limowankenobi.github.io
+disqus-shortname: "limos-io"
 
 # Site owner
 owner:
-  name:  			"Edgar Hernandez"
-  email:   			limowankenobi@gmail.com
-  twitter:          edhzsz
+  name:  			    "Edgar Hernandez"
+  email:   			  limowankenobi@gmail.com
+  twitter:        edhzsz
   google:
-    ad-client:  "ca-pub-9720253951703917"
-    ad-slot:    "6510116046"
-  bio:          "Limo, just Limo"
-  avatar: 			limo.jpeg # 160x160 px image for author byline
+    ad-client:    "ca-pub-9720253951703917"
+    ad-slot:      "6510116046"
+  bio:            "Limo, just Limo"
+  avatar:         limo.jpeg # 160x160 px image for author byline
   # Social networking links used in footer. Update and remove as you like.
   twitter:        limowankenobi
   facebook:       
@@ -47,6 +47,6 @@ defaults:
       path: ""
       type: "post"
     values:
-      layout: "default"
+      layout: "article"
 
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

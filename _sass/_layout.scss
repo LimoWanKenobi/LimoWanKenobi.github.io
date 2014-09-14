@@ -2,7 +2,7 @@
 // --------------------------------------------------
 
 #masthead {
-	padding: $gutter;
+	padding: $gutter * 0.4;
 	z-index: 5;
 	@include transform(translate(0,0));
 	@include transition(500ms cubic-bezier(.645,.045,.355,1.000));
@@ -142,6 +142,12 @@
 // --------------------------------------------------
 
 #main {
+	.wrap {
+		background-color: white;
+		padding: 0 $gutter $gutter; 
+		box-shadow: 0 0 5px #b8b8b8;
+
+	}
 	.inner-wrap {
 		@include media($medium) {
 			@include span-columns(9);
@@ -235,6 +241,98 @@
 		}
 	}
 }
+// page lead
+.page-lead {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	color: $white;
+	@include media($large) {
+		background-size: cover;
+	}
+}
+.page-lead-content {
+	padding: 1em;
+	@include media($medium) {
+		padding: 2em;
+	}
+	@include media($large) {
+		padding: 3em;
+	}
+	h1 {
+		@include font-size(48);
+		@include media($medium) {
+			@include font-size(60);
+		}
+		@include media($large) {
+			@include font-size(72);
+		}
+	}
+	h2 {
+		@include font-size(20);
+		@include media($medium) {
+			@include font-size(24);
+		}
+		@include media($large) {
+			@include font-size(32);
+		}
+	}
+}
+.page-feature-header {
+
+	.page-title {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 3.75rem;
+		line-height: 1.25;
+		
+		-webkit-transform: rotate(-1deg);
+		-ms-transform: rotate(-1deg);
+		transform: rotate(-1deg);
+
+		span {
+        	background: #000
+    	}
+	}
+
+	.page-meta {
+	    margin-top: 1.618em;
+	    font-family: Lato, Calibri, Arial, sans-serif;
+	    font-size: 12px;
+	    font-size: 0.75rem;
+	    line-height: 1.75;
+	    margin-bottom: 24px;
+	    margin-bottom: 1.5rem;
+	    text-align: left;
+	    text-transform: uppercase;
+	    a {
+		    display: inline-block;
+		    text-decoration: none
+		}
+
+		span {
+	        padding: 2px 4px;
+	        background: #000;
+	        color: #fff;
+	        a {
+		        color: #fff
+		    }
+	    }
+	}
+
+	.page-meta:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+}
+
 // page header
 .page-feature {
 	@include fill-parent;
@@ -242,6 +340,8 @@
 	img {
 		width: 100%;
 	}
+
+	min-height: 200px;
 }
 // make image flush with edges on small screens
 .page-image {	

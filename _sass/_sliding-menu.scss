@@ -4,8 +4,8 @@
 
 .sliding-menu-button {
 	position: fixed;
-	top: $gutter;
-	right: $gutter;
+	top: $gutter * 0.4;
+	right: $gutter * 0.4;
 	display: block;
 	width: $button-size * 2;
 	height: $button-size * 2;
