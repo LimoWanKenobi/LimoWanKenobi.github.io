@@ -26,7 +26,6 @@
 	font-weight: 700;
 	@include font-size(20,no);
 	line-height: .5 * $masthead-height; // half the height to center vertically
-	text-transform: uppercase;
 }
 
 
@@ -297,7 +296,10 @@
 		transform: rotate(-1deg);
 
 		span {
-        	background: #000
+					background-image:url('../images/navstroke.png');
+					background-size: 100% 75px;
+					background-repeat:no-repeat;
+					padding: 0 20px;
     	}
 	}
 
@@ -406,6 +408,10 @@
 	}
 }
 // tiles
+.tiles {
+	margin-top: 21px;
+}
+
 .tile {
 	@include outer-container;
 	margin-bottom: $gutter;
