@@ -39,6 +39,7 @@ bing_verify:
 # Jekyll configuration
 timezone:    Europe/Vienna
 permalink:   pretty
+host:        localhost
 
 # defaults
 defaults:

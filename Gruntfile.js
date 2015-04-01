@@ -1,9 +1,8 @@
-// https://github.com/dannygarcia/grunt-jekyll
- 
-/*global module:false*/
 module.exports = function(grunt) {
+  // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -14,11 +13,70 @@ module.exports = function(grunt) {
         '!js/main.js'
       ]
     },
+
+    uglify: {
+      dist: {
+        options: {
+          banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */',
+          compress: true,
+          beautify: false,
+          mangle: false
+        },
+        files: {
+          'js/main.js': [
+            'js/plugins/*.js',
+            'js/_*.js'
+          ]
+        }
+      }
+    },
+
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 7,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          cwd: '_images/',
+          src: '{,*/}*.{png,jpg,jpeg}',
+          dest: 'images/'
+        }]
+      }
+    },
+
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '_images/',
+          src: '{,*/}*.svg',
+          dest: 'images/'
+        }]
+      }
+    },
+
+    jekyll: {
+      options: {
+        bundleExec: true
+      },
+      serve: {
+        options: {
+          drafts: true,
+          watch: true,
+          serve: true,
+          port:4000
+        }
+      }
+    },
+
     shell: {
       jekyllBuild: {
         command: 'jekyll build'
       }
     },
+
     connect: {
       server: {
         options: {
@@ -27,6 +85,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     watch: {
       jekyll: {
         files: [
@@ -76,98 +135,21 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
-    },
-    sass: {
-      dist: {
-        options: {
-          sourcemap: false,
-          style: 'compressed',
-          compass: false,
-        },
-        files: {
-          'css/main.min.css':'_sass/main.scss'
-        }
-      },
-      dev: {
-        options: {
-          sourcemap: false,
-          compass: false,
-        },
-        files: {
-          'css/main.css':'_sass/main.scss'
-        }
-      }
-    },
-    uglify: {
-      dist: {
-        options: {
-          banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */',
-          compress: true,
-          beautify: false,
-          mangle: false
-        },
-        files: {
-          'js/main.js': [
-            'js/plugins/*.js',
-            'js/_*.js'
-          ]
-        }
-      }
-    },
-    imagemin: {
-      dist: {
-        options: {
-          optimizationLevel: 7,
-          progressive: true
-        },
-        files: [{
-          expand: true,
-          cwd: '_images/',
-          src: '{,*/}*.{png,jpg,jpeg}',
-          dest: 'images/'
-        }]
-      }
-    },
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '_images/',
-          src: '{,*/}*.svg',
-          dest: 'images/'
-        }]
-      }
-    },
-    jekyll: {                             // Task
-      options: {                          // Universal options
-        bundleExec: true
-      },
-      serve: {                            // Another target
-        options: {
-          drafts: true,
-          watch: true,
-          serve: true,
-          port:4000
-        }
-      }
     }
   });
 
-  // Load tasks
+// Load tasks
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  //grunt.loadNpmTasks('grunt-contrib-sass');
-  //grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-svgmin');
-  grunt.loadNpmTasks('grunt-newer');
-  grunt.loadNpmTasks('grunt-jekyll');
 
-  // Register tasks
-  grunt.registerTask('default', ['jshint', 'uglify', 'newer:svgmin', 'jekyll']);
-  //grunt.registerTask('default', ['jshint', 'uglify', 'newer:imagemin', 'newer:svgmin', 'jekyll']);
-  grunt.registerTask('serve', ['shell', 'connect', 'watch']);
+  grunt.registerTask('default', ['jshint', 'uglify', 'newer:imagemin', 'newer:svgmin', 'jekyll']);
   grunt.registerTask('optimize', ['imagemin', 'svgmin']);
+  grunt.registerTask('serve', ['shell', 'connect', 'watch']);
 };
