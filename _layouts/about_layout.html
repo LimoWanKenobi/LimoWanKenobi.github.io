@@ -21,21 +21,28 @@
     <meta http-equiv="cleartype" content="on">
 
     <style>
-    .sliding-menu-content {
-      top: 0;
-      right: 0;
+    .outer {
+      border: 2px solid brown;
+      border-radius: 1em;
+      background: red;
+      font-size: 20pt;
+      width: 12em;
+      height: 7em;
       text-align: center;
-      visibility: hidden;
-      height: 100%;
-      width: 100%;
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
-      transform: translateX(100%);
+    }
+    .boilerplate {
+      color: white;
+      font-family: sans-serif;
+      padding: 0.5em;
+    }
+    .name {
+      color: black;
+      background: white;
+      font-family: "Marker Felt", cursive;
+      font-size: 45pt;
+      padding-top: 0.2em;
     }
     </style>
-
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
     <link rel="stylesheet" href="{{ site.url }}/css/github.min.css">
     <!-- HTML5 Shiv and Media Query Support for IE -->
@@ -66,7 +73,14 @@
           <div class="inner-wrap">
             <nav class="toc"></nav><!-- /.toc -->
             <div id="content" class="page-content" itemprop="articleBody">
-              
+              <div class="outer">
+                <div class="boilerplate">
+                  Hi! My name is
+                </div>
+                <div class="name">
+                  Limo
+                </div>
+              </div>
               {{ content }}
               <div id="github-profile"></div>
               <hr />
