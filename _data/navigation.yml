@@ -2,10 +2,15 @@
 
 - title: Blog
   url: /blog/
-  excerpt:
+  excerpt: "My personal blog"
+  image:
+
+- title: Projects
+  url: /projects/
+  excerpt: "My personal projects"
   image:
 
 - title: About
   url: /about/
-  excerpt:
-  image:
+  excerpt: "About me"
+  image: limo.jpeg
