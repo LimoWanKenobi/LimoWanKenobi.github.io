@@ -19,22 +19,22 @@ owner:
   avatar:         limo.jpeg # 160x160 px image for author byline
   # Social networking links used in footer. Update and remove as you like.
   twitter:        limowankenobi
-  facebook:       
+  facebook:
   github:         https://github.com/LimoWanKenobi
   stackexchange:  http://stackoverflow.com/users/149885/limo-wan-kenobi
   linkedin:       http://www.linkedin.com/pub/edgar-said-hern%C3%A1ndez-s%C3%A1nchez/16/713/925/en
-  instagram:      
+  instagram:
   flickr:         https://www.flickr.com/photos/capcamgto/
-  tumblr:         
+  tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/+EdgarSaidHernándezSánchez?rel=author 
+  google_plus:    https://plus.google.com/+EdgarSaidHernándezSánchez?rel=author
 
 # Analytics and webmaster tools stuff goes here
 google_analytics_tracking_id:   UA-48372898-1
-google_analytics_default_url:  limowankenobi.github.io 
-google_verify:      
+google_analytics_default_url:  limowankenobi.github.io
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # Jekyll configuration
 timezone:    Europe/Vienna
