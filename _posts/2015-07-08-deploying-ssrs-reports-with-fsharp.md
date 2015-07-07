@@ -3,11 +3,12 @@ layout: article
 title: "Deploying SSRS reports with FSharp"
 modified: 2015-07-08 00:05:37 +0200
 tags: [fsharp, code, learning, oss, ssrs]
-image: fred_1600x800.jpg
-  feature: fred_400x250.jpg
+image:
+  feature: fred_1600x800.jpg
+  teaser: fred_400x250.jpg
   credit:
   creditlink:
-comments:
+comments: true
 share:
 categories: blog
 ---
