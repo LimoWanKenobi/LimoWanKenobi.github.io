@@ -142,9 +142,8 @@
 
 #main {
 	.wrap {
-		background-color: white;
+		background-color: #ebebeb;
 		padding: 0 $gutter $gutter; 
-		box-shadow: 0 0 5px #b8b8b8;
 
 	}
 	.inner-wrap {
@@ -290,7 +289,7 @@
 		color: #fff;
 		font-size: 3.75rem;
 		line-height: 1.25;
-		
+
 		-webkit-transform: rotate(-1deg);
 		-ms-transform: rotate(-1deg);
 		transform: rotate(-1deg);
@@ -346,7 +345,7 @@
 	min-height: 200px;
 }
 // make image flush with edges on small screens
-.page-image {	
+.page-image {
 	position: relative;
 	margin-left: -1 * $gutter;
 	margin-right: -1 * $gutter;
@@ -370,7 +369,7 @@
 	}
 }
 // breadcrumbs
-.breadcrumbs { 
+.breadcrumbs {
 	@include row;
 	margin-top: $gutter;
 	@include font-size(10,no);
