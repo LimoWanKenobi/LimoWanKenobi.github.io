@@ -60,29 +60,25 @@
     <div id="page-wrapper">
       {% include browser-upgrade.html %}
 
-      <div id="main" role="main"> 
+      <div id="main" role="main">
         <article class="wrap" itemscope itemtype="http://schema.org/Article">
           <div class="page-feature-header">
             {% include image-feature.html %}
             {% if page.categories %}{% include breadcrumbs.html %}{% endif %}
             <div class="page-title">
               <h1><span>{{ page.title }}<span></h1>
-              {% if page.excerpt %}<h2 class="page-meta"><span>{{ page.excerpt }}</span></h2>{% endif %}        
+              {% if page.excerpt %}<h2 class="page-meta"><span>{{ page.excerpt }}</span></h2>{% endif %}
             </div>
           </div>
           <div class="inner-wrap">
             <nav class="toc"></nav><!-- /.toc -->
             <div id="content" class="page-content" itemprop="articleBody">
-              <div class="outer">
-                <div class="boilerplate">
-                  Hi! My name is
-                </div>
-                <div class="name">
-                  Limo
-                </div>
-              </div>
               {{ content }}
               <div id="github-profile"></div>
+              <figure>
+              	<a href="https://github.com/LimoWanKenobi" target="_blank"><img src="http://ghchart.rshah.org/LimoWanKenobi" alt="Limos's Github chart" /></a>
+              	<figcaption>Lets make this baby green</figcaption>
+              </figure>
               <hr />
               <footer class="page-footer">
                 {% if page.share != false %}{% include share-this.html %}{% endif %}
@@ -106,7 +102,7 @@
     <script src="{{ site.url }}/js/vendor/underscore-min.js"></script>
     <script src="{{ site.url }}/js/vendor/github.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
-    
+
     {% if page.toc == true %}
     <script type="text/javascript">
       $('.toc').toc({
@@ -114,7 +110,7 @@
         'container': '.page-content', //element to find all selectors in
         'smoothScrolling': true, //enable or disable smooth scrolling on click
         'prefix': 'toc', //prefix for anchor tags and class names
-        'onHighlight': function(el) {}, //called when a new section is highlighted 
+        'onHighlight': function(el) {}, //called when a new section is highlighted
         'highlightOnScroll': true, //add class to heading that is currently in focus
         'highlightOffset': 100, //offset to trigger the next headline
         'anchorName': function(i, heading, prefix) { //custom function for anchor name
@@ -135,7 +131,7 @@
 	    $("#scroll-cue").hide();
 	    // disable on touch devices
 	    if ('ontouchstart' in document.documentElement == false) {
-        $("#scroll-cue").show(); 
+        $("#scroll-cue").show();
         // remove scroll cue when content is in view
         window.onscroll = function () {
           var height = $(window).height();
@@ -146,7 +142,7 @@
   	        $("#scroll-cue").hide();
           }
           else {
-  	        $("#scroll-cue").show(); 
+  	        $("#scroll-cue").show();
           }
   	    }
       }
