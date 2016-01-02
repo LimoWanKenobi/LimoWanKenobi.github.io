@@ -114,7 +114,6 @@
 // --------------------------------------------------
 
 #page-wrapper {
-	padding: 0 $gutter; // add white space for smaller screens
 	@include size(100% 100%);
 	-webkit-overflow-scrolling: touch;
 	z-index: 2;
@@ -142,7 +141,7 @@
 
 #main {
 	.wrap {
-		padding: 0 $gutter $gutter; 
+		padding: 0 $gutter $gutter;
 	}
 	.inner-wrap {
 		@include media($medium) {
