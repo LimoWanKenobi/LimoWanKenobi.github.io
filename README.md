@@ -1,4 +1,4 @@
-limowankenobi.github.io
+edhzsz.github.io
 =======================
 
 Limos io site-blog for Jekyll 2

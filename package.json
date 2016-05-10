@@ -1,9 +1,9 @@
 {
-  "name": "limowankenobi_io",
+  "name": "edhzsz_io",
   "version": "0.0.1",
-  "description": "The Jekyll blog of LimoWanKenobi",
-  "author": "Limo Wan Kenobi <limowankenobi@gmail.com>",
-  "homepage": "http://limowankenobi.gihub.io/",
+  "description": "The Jekyll blog of edhzsz",
+  "author": "Limo Wan Kenobi <edhzsz@gmail.com>",
+  "homepage": "http://edhzsz.gihub.io/",
   "license": "The MIT License (MIT)",
   "devDependencies": {
     "grunt": "^0.4.5",

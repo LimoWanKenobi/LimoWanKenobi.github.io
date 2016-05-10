@@ -37,6 +37,6 @@ I believe I am not the only one suffering the SSRS pain and, to try to alleviate
 the pain of others, I am releasing my small tool as an open source project.
 
 I have already solved the biggest problem. I found a good a name for it. I called it
-FReD (F# Reports Deployer). The project is hosted on [github](http://limowankenobi.github.io/FReD/),
+FReD (F# Reports Deployer). The project is hosted on [github](http://edhzsz.github.io/FReD/),
 and now I just need to clean the code and start publishing it (which I will be doing slowly
 during the next week).
