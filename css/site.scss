@@ -1,0 +1,36 @@
+---
+---
+body,html {
+    height: 100%
+}
+
+body {
+    line-height: 1;
+    font: 16px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+nav.main-nav {
+    padding: 20px 20px 0;
+    text-align: right;
+    z-index: 100;
+
+    a {
+        top: 8px;
+        right: 6px;
+        padding: 8px 12px;
+        color: #5badf0;
+        font-size: 13px;
+        line-height: 1.35;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+
+    a.cta {
+        background: #5badf0;
+        color: #fff;
+        margin-left: 12px;
+    }
+}
