@@ -26,11 +26,16 @@ nav.main-nav {
         line-height: 1.35;
         border-radius: 3px;
         text-decoration: none;
-    }
-
-    a.cta {
-        background: #5badf0;
-        color: #fff;
         margin-left: 12px;
+
+        &:hover {
+          background: #A4CEF1;
+          color: #fff;
+        }
+
+        &.cta {
+            background: #5badf0;
+            color: #fff;
+        }
     }
 }
