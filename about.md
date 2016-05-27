@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: about_layout
 permalink: /about/
 title: "About Limo"
 date: 2014-01-01
