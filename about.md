@@ -1,5 +1,5 @@
 ---
-layout: about_layout
+layout: base
 permalink: /about/
 title: "About Limo"
 date: 2014-01-01
@@ -9,6 +9,7 @@ image:
   teaser:
   thumb:
 ads: false  
+active: about
 ---
 
 I'm a fugitive of three Math University Faculties now making a life as a Professional Software Developer, Sr. Procrastinator and Jr. Father.

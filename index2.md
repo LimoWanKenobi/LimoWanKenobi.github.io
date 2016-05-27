@@ -1,5 +1,5 @@
 ---
 layout: base
 permalink: /new
-active: blog
+active: home
 ---
