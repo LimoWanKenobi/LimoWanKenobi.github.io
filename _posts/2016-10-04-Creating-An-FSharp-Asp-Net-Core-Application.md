@@ -21,8 +21,9 @@ This will create two files:
 
 * Program.fs
 
-    open System
 
+    open System
+    
     [<EntryPoint>]
     let main argv = 
         printfn "Hello World!"
@@ -30,6 +31,7 @@ This will create two files:
 
 
 * project.json
+
 
     {
       "version": "1.0.0-*",
