@@ -14,7 +14,7 @@ active: about
 
 I'm a fugitive of three Math University Faculties now making a life as a Professional Software Developer, Sr. Procrastinator and Jr. Father.
 
-I have 6+ years of experience developing mostly web applications using C# and javascript.
+I have been a professional Software Janitor since 2008 cleaning mostly web applications using C# and JavaScript.
 
 I love to solve problems and I like to participate in all kind of programming contests.
 
