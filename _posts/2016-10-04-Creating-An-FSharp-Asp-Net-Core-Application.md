@@ -30,7 +30,7 @@ allows you to select the language. For F# the valid options are `fs`, `f#` and `
 This command will create two files that will allow us to build a Hello World console application and will give a fundation to create
 the ASP .Net Core application.
 
-* Program.fs
+Program.fs
 
 ``` ocaml
 open System
@@ -41,7 +41,7 @@ let main argv =
     0 // return an integer exit code
 ```
 
-* project.json
+project.json
 
 ``` json
 {
