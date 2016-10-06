@@ -73,8 +73,10 @@ project.json
 }
 ```
 
-Executing `dotnet build` will restore the packages and build successfully.
+Executing `dotnet restore` will restore the packages.
+Executing `dotnet build` will build the project.
+Executing `dotnet run` will run the application and it will print to console
 
-And, finally, executing `dotnet run` will print to console
+    Hello World!
 
-    Hello World
+Actually, executing `dotnet run` will also execute `build` if there are changes not build yet.
