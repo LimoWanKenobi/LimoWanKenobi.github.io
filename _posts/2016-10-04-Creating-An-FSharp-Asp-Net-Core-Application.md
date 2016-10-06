@@ -80,3 +80,5 @@ Executing `dotnet run` will run the application and it will print to console
     Hello World!
 
 Actually, executing `dotnet run` will also execute `build` if there are changes not build yet.
+
+The second part of this series is [here](/blog/2016/10/06/Creating-A-FSharp-Asp-Net-App-2/).
